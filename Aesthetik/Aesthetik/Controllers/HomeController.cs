@@ -21,11 +21,6 @@ namespace Aesthetik.Controllers
             return View();
         }
 
-        public async Task<IActionResult>NodeResult([FromServices]INodeServices nodesvc)
-        {
-            var result = await nodesvc.InvokeAsync<string>("ServerMath.js", 4, 5);
-            ViewData["NodeResult"] = result;
-            return View("NodeResult");
-        }
+       
     }
 }
