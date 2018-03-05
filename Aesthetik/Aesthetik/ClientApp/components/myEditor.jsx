@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom';
 import { Editor, EditorState } from 'draft-js';
 
-export class MyEditor extends React.Component {
+export class  MyEditor extends React.Component {
     constructor(props) {
         super(props);
         this.state = { editorState: EditorState.createEmpty() };
@@ -10,7 +10,12 @@ export class MyEditor extends React.Component {
     }
     render() {
         return (
-            <Editor editorState={this.state.editorState} onChange={this.onChange} />
+            <div id="content">
+                <h1>Aesthetik Editor</h1>
+                <div className="editor">
+                    <Editor editorState={this.state.editorState} onChange={this.onChange} />
+                </div>
+            </div>
         );
     }
 }
