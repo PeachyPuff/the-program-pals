@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
 import { Editor, EditorState } from 'draft-js';
+import * as t from './test.d.ts';
 
 export class  MyEditor extends React.Component {
     constructor(props) {

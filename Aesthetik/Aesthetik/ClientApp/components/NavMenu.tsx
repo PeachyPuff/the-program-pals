@@ -4,37 +4,44 @@ import { Link, NavLink } from 'react-router-dom';
 export class NavMenu extends React.Component<{}, {}> {
     public render() {
         return <div className='main-nav'>
-                
-                <div className='navbar-header'>
-                    <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                        <span className='sr-only'>Toggle navigation</span>
-                        <span className='icon-bar'></span>
-                        <span className='icon-bar'></span>
-                        <span className='icon-bar'></span>
-                    </button>
-                    <Link className='navbar-brand' to={ '/' }>Aesthetik</Link>
-                
-                <div className='clearfix'></div>
+            <nav className="navbar mb-4 navbar-expand-md navbar-dark bg-dark"></nav>
+            <div className="navbar navbar-inverse navbar-fixed-top">
                 <div className="container">
-                    <ul className='nav navbar-nav'>
-                        <li>
-                            <NavLink to={ '/' } exact activeClassName='active'>
-                                <span className='glyphicon glyphicon-home'></span> Home
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
+                        <a className="navbar-brand" href="#">Aesthetik</a>
+                    </div>
+                    <div className='clearfix'></div>
+                    <div className="container">
+                       
+                                <NavLink to={'/'} exact activeClassName='active'>
+                                    <span className='glyphicon glyphicon-home'></span> Aesthetik
                             </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={'/textarea'} activeClassName='active'>
-                                <span className='glyphicon glyphicon-th-list'></span> TextArea
+                           
+                                <NavLink to={'/textarea'} activeClassName='active'>
+                                    <span className='glyphicon glyphicon-th-list'></span> TestTextArea
                             </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={'/myEditor'} activeClassName='active'>
-                                <span className='glyphicon glyphicon-th-list'></span> Editor
+                                <NavLink to={'/textarea'} activeClassName='active'>
+                                    <span className='glyphicon glyphicon-th-list'></span> About
                             </NavLink>
-                        </li>
-                    </ul>
+                                <NavLink to={'/textarea'} activeClassName='active'>
+                                    <span className='glyphicon glyphicon-th-list'></span> Features
+                            </NavLink>
+
+                                <NavLink to={'/myeditor'} activeClassName='active'>
+                                    <span className='glyphicon glyphicon-th-list'></span> Editor
+                            </NavLink>
+                                <a href="C:\Users\Frizz\Desktop\CSC 3380\the-program-pals\Aesthetik\Aesthetik\ClientApp\components\TextField.html">Editor </a>
+                          
+                    </div>
+                </div>
                 </div>
             </div>
-        </div>;
+  
     }
 }

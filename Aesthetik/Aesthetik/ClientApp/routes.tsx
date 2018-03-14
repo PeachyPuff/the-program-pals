@@ -5,7 +5,8 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { TextArea } from './components/TextArea';
-import * as MyEditor  from './components/MyEditor';
+import * as MyEditor from './components/MyEditor';
+
 //<Route path='/myeditor' component={MyEditor} />
 
 export const routes = <Layout>

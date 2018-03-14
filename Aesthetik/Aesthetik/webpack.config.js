@@ -36,6 +36,7 @@ module.exports = (env) => {
                 }
             ]
         },
+
         plugins: [
             new CheckerPlugin(),
             new webpack.DllReferencePlugin({

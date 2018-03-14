@@ -1,6 +1,6 @@
-.main-nav li .glyphicon {
-    margin-top: 10px;
-}
+/*.main-nav li .glyphicon {
+    margin-right: 10px;
+}*/
 
 /* Highlighting rules for nav menu items */
 .main-nav li a.active,
@@ -12,7 +12,8 @@
 
 /* Keep the nav menu independent of scrolling and on top of other items */
 .main-nav {
-    position: fixed;
+   
+    position: fixed; 
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +27,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1300px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
         height: 100%;

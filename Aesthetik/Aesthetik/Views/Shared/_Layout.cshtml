@@ -10,8 +10,17 @@
     <environment exclude="Development">
         <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
     </environment>
+    <environment include="Development">
+        <!-- Bootstrap core CSS -->
+        <link href="~/dist/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="~/dist/font-awesome.min.css" rel="stylesheet">
+     </environment>
 </head>
 <body>
+   <img src="~/dist/AesthetikLogo6.svg" alt="Aesthetik Logo"/>
+
     @RenderBody()
 
     <script src="~/dist/vendor.js" asp-append-version="true"></script>
