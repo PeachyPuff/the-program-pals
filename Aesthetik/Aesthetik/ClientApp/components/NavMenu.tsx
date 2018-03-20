@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+
 export class NavMenu extends React.Component<{}, {}> {
     public render() {
-        return <div className='main-nav'>
+        return <nav className='main-nav'>
             <nav className="navbar mb-4 navbar-expand-md navbar-dark bg-dark"></nav>
             <div className="navbar navbar-inverse navbar-fixed-top">
                 <div className="container">
@@ -36,12 +37,12 @@ export class NavMenu extends React.Component<{}, {}> {
                                 <NavLink to={'/myeditor'} activeClassName='active'>
                                     <span className='glyphicon glyphicon-th-list'></span> Editor
                             </NavLink>
-                                <a href="C:\Users\Frizz\Desktop\CSC 3380\the-program-pals\Aesthetik\Aesthetik\ClientApp\components\TextField.html">Editor </a>
+                            
                           
                     </div>
                 </div>
                 </div>
-            </div>
+            </nav>
   
     }
 }

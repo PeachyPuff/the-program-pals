@@ -1,7 +1,10 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
 import { Editor, EditorState } from 'draft-js';
-import * as t from './test.d.ts';
+import { RouteComponentProps } from 'react-router';
+
+//export class MyEditorProps extends RouteComponentProps<any> { }
+
 
 export class  MyEditor extends React.Component {
     constructor(props) {

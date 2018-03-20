@@ -14,7 +14,7 @@
     "aspnet-webpack": "^2.0.1",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "3.2.1",
-    "bootstrap": "3.3.7",
+    "bootstrap": "^4.0.0-alpha.5",
     "css-loader": "0.28.4",
     "event-source-polyfill": "0.0.9",
     "extract-text-webpack-plugin": "2.1.2",
@@ -22,8 +22,8 @@
     "isomorphic-fetch": "2.2.1",
     "jquery": "3.2.1",
     "json-loader": "0.5.4",
-    "react": "15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.2",
     "react-hot-loader": "3.0.0-beta.7",
     "react-router-dom": "4.1.1",
     "style-loader": "0.18.2",
@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "draft-css": "0.0.1",
-    "draft-js": "^0.10.5"
+    "draft-js": "^0.10.5",
+    "reactstrap": "^5.0.0-beta.2"
   }
 }
