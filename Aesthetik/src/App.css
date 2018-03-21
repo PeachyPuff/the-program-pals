@@ -28,12 +28,18 @@ body{
  box-sizing: border-box;
 }
 #content {
- width: 480px;
+ width: 580px;
+ height: 720px;
  margin: 0 auto;
 }
 .editor {
+ height: 480px;
+ background-color: #5e7c87;
  border: 1px solid grey;
  padding: 6px;
+}
+.Brand{
+ color: white;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

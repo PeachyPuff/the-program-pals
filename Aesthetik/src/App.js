@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Editor, EditorState} from 'draft-js';
 import logo from './AesthetikLogo.svg';
 import './App.css';
+import './node_modules/draft-css/src/scss/_base.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../node_modules/react-bootstrap';
 import { Navbar,
