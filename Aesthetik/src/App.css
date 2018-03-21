@@ -24,7 +24,17 @@ body{
 .App-intro {
   font-size: large;
 }
-
+* {
+ box-sizing: border-box;
+}
+#content {
+ width: 480px;
+ margin: 0 auto;
+}
+.editor {
+ border: 1px solid grey;
+ padding: 6px;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
