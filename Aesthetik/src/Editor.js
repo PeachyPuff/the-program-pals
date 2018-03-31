@@ -1,10 +1,10 @@
+import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import logo from './AesthetikLogo.svg';
-import ReactDOM from 'react-dom';
 import {Editor, EditorState} from 'draft-js';
+import './App.css';
 
-
-export default class App extends React.Component {
+export default class EditorPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {editorState: EditorState.createEmpty()};
