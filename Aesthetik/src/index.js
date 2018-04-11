@@ -7,7 +7,7 @@ import EditorPage from './Editor';
 import Features from './Features';
 import LoginPage from './Login';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from 'registerServiceWorker';
 
 ReactDOM.render(
 	(<Router>
