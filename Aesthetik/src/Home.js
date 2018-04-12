@@ -15,7 +15,7 @@ export default class Home extends React.Component {
       <div className="App">
         <Jumbotron>
           <h1 >Aesthetik</h1>
-            <p className="App-intro">A Customizable Writing App to Suit Your Creative Needs
+            <p className="App-header">A Customizable Writing App to Suit Your Creative Needs
             <br />
             <Link to="/editor">
               <Button   
