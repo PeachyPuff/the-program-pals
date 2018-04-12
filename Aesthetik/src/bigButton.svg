@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.55;filter:url(#AI_BevelShadow_1);}
+	.st1{fill:#1A1A1A;}
+	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<filter  width="140%" height="140%" id="AI_BevelShadow_1" x="-20%" y="-20%">
+	<feGaussianBlur  stdDeviation="4" result="blur" in="SourceAlpha"></feGaussianBlur>
+	<feOffset  dy="4" dx="4" result="offsetBlur" in="blur"></feOffset>
+	
+		<feSpecularLighting  style="lighting-color:white" specularExponent="10" specularConstant="1" surfaceScale="5" result="specOut" in="blur">
+		<fePointLight  z="-20000" x="-5000" y="-10000"></fePointLight>
+	</feSpecularLighting>
+	<feComposite  in2="SourceAlpha" operator="in" result="specOut" in="specOut"></feComposite>
+	<feComposite  k1="0" k4="0" k3="1" k2="1" in2="specOut" operator="arithmetic" result="litPaint" in="SourceGraphic">
+		</feComposite>
+	<feMerge>
+		<feMergeNode  in="offsetBlur"></feMergeNode>
+		<feMergeNode  in="litPaint"></feMergeNode>
+	</feMerge>
+</filter>
+<g id="XMLID_1_" class="st0">
+	<circle id="XMLID_5_" class="st1" cx="470.9" cy="268" r="119.7"/>
+	<circle id="XMLID_4_" class="st2" cx="470.9" cy="268" r="119.7"/>
+</g>
+</svg>

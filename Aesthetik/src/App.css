@@ -1,5 +1,6 @@
 body{
-  background-color: #222;
+  background-color: #4b5463;
+  /*background-image: url(happyBackground1.svg);*/
 }
 .App {
   text-align: center;
@@ -38,13 +39,25 @@ body{
  border: 1px solid grey;
  padding: 6px;
 }
-.Brand{
+.Brand {
  color: white;
 }
 
 #NavHead {
   padding-top: 50px;
   min-height: ~"calc(100vh - 92px)";
+}
+
+./*MainButton {
+  background: url(./bigButton.svg) no-repeat center center;
+  width: 100px;
+  height: 100px;
+}
+*/
+.EditorTitle {
+  font-family: Georgia, serif;
+  color: white;
+   text-align: center;
 }
 
 footer {

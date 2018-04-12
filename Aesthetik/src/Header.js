@@ -15,14 +15,14 @@ class Header extends React.Component {
       <Navbar fixedTop >
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="/">
+            <a href="/home">
               Aesthetik
             </a>
           </Navbar.Brand>
         </Navbar.Header>
        
           <Nav bsStyle="pills">
-          <IndexLinkContainer to="/">
+          <IndexLinkContainer to="/home">
             <NavItem
               eventKey={1}>
               Home
