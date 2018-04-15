@@ -1,6 +1,7 @@
 body{
-  background-color: #4b5463;
-  /*background-image: url(happyBackground1.svg);*/
+  /*background-color: #4b5463;*/
+  background-image: url(aesthetikBackground.svg);
+  background-size: cover;
 }
 .App {
   text-align: center;
@@ -12,7 +13,7 @@ body{
 }
 
 .App-header {
-  background-color: #4b5463;
+  background-color: #343b3d;
   height: 100px;
   padding: 20px;
   color: white;
@@ -45,6 +46,19 @@ body{
 .CarouselImage{
   height: 100%;
   width: 100%;
+}
+
+.jumbotronStyle{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  height: 60%;
+  background-color: #343b3d;
+  opacity: 0.8;
+  color: #bddaed;
+
 }
 
 #NavHead {

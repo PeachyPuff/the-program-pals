@@ -12,7 +12,7 @@ import { IndexLinkContainer } from 'react-router-bootstrap/lib';
 class Header extends React.Component {
   render() {
     return (
-      <Navbar fixedTop >
+      <Navbar fixedTop inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="/home">

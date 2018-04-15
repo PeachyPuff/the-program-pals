@@ -13,9 +13,10 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="App">
-        <Jumbotron>
-          <h1 >Aesthetik</h1>
+        <Jumbotron className="jumbotronStyle">
+          <h1 className >a e s t h e t i  k .</h1>
             <p className="App-header">A Customizable Writing App to Suit Your Creative Needs
+            <br />
             <br />
             <Link to="/editor">
               <Button   
