@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aphrodite": "^2.2.0",
+    "draft-css": "0.0.1",
     "draft-js": "^0.10.5",
+    "draft-js-plugins-editor": "^2.0.4",
+    "draft-js-side-toolbar-plugin": "^2.0.2",
+    "draft-js-toolbars": "^0.0.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.1",
     "react": "^16.2.0",
@@ -21,6 +26,8 @@
   },
   "devDependencies": {
     "bootstrap": "^4.0.0",
-    "react-bootstrap": "^0.32.1"
+    "css-loader": "^0.28.11",
+    "react-bootstrap": "^0.32.1",
+    "style-loader": "^0.21.0"
   }
 }

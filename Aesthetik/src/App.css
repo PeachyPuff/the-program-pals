@@ -36,9 +36,10 @@ body{
 }
 .editor {
  height: 480px;
- background-color: #5e7c87;
+ background-color: #5b5f66;
  border: 1px solid grey;
  padding: 6px;
+ /*opacity: 0.8;*/
 }
 .Brand {
  color: white;
