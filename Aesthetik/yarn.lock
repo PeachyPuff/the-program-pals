@@ -5754,6 +5754,10 @@ react-bootstrap@^0.32.1:
     uncontrollable "^4.1.0"
     warning "^3.0.0"
 
+react-butterfly-button@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-butterfly-button/-/react-butterfly-button-1.0.0.tgz#5c495ac91600da6a3fba22b085561c4dc1ed561d"
+
 react-dev-utils@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.0.tgz#425ac7c9c40c2603bc4f7ab8836c1406e96bb473"

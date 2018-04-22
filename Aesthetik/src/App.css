@@ -35,18 +35,24 @@ body{
  margin: 0 auto;
 }
 .editor {
- height: 480px;
+ color: white;
+ min-height: 480px;
  background-color: #5b5f66;
  border: 1px solid grey;
+ border-radius: 15px;
  padding: 6px;
- /*opacity: 0.8;*/
+ box-shadow: 10px 5px 5px -2px #3a3b3d;
+ opacity: 0.9;
 }
 .Brand {
  color: white;
 }
 .CarouselImage{
-  height: 100%;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 70%;
 }
 
 .jumbotronStyle{
@@ -67,16 +73,26 @@ body{
   min-height: ~"calc(100vh - 92px)";
 }
 
-./*MainButton {
-  background: url(./bigButton.svg) no-repeat center center;
+.MainButton {
+  
+/*  background: url(./bigButton.svg) no-repeat center center;
+  background-size: cover;*/
   width: 100px;
-  height: 100px;
+  height: 40px;
 }
-*/
+
 .EditorTitle {
   font-family: Georgia, serif;
   color: white;
-   text-align: center;
+  text-align: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand>img {
+  padding: 7px 14px;
 }
 
 footer {

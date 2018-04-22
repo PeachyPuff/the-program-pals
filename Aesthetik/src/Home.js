@@ -5,9 +5,10 @@ import button from './bigButton.svg';
 import ReactDOM from 'react-dom';
 import { Jumbotron, Button, Image, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
 //<img src={logo} className="App-logo" alt="logo" />
 //<Image src={require("bigButton.svg")} rounded />
+import FormattingBar from './FormattingBar';
+import Header  from './Header';
 
 export default class Home extends React.Component {
     constructor(props, context) {
@@ -32,23 +33,24 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="App">
+       <Header />
         <Jumbotron className="jumbotronStyle">
-          <h1 className >a e s t h e t i  k .</h1>
+          <h1>a e s t h e t i  k .</h1>
             <p className="App-header">A Customizable Writing App to Suit Your Creative Needs
             <br />
             <br />
-            
-              <Button   
+        
+              <Button
                 bsSize="large"
                 bsStyle="primary"
                 onClick={this.handleShow}>
                 Start Creating
               </Button>
-              
+           
             </p>
            </Jumbotron>
 
-           <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Get Started</Modal.Title>
           </Modal.Header>
@@ -70,7 +72,7 @@ export default class Home extends React.Component {
             <Button onClick={this.handleClose}>Close</Button>
           </Modal.Footer>
         </Modal>
-
+  
          </div> 
 
     	);

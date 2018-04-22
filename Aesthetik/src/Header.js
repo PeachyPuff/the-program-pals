@@ -5,19 +5,35 @@ import { Navbar,
          Button,
          NavDropdown,
          MenuItem,
-         Glyphicon
+         Glyphicon,
+         Image
         } from 'react-bootstrap';
 import { IndexLinkContainer } from 'react-router-bootstrap/lib';
+import Logo from 'AesthetikLogo.svg';
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      renderChild: true}
+    this.handleChildUnmount = this.handleChildUnmount.bind(this);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+  handleChildUnmount(){
+        this.setState({renderChild: false});
+    }
+
   render() {
     return (
       <Navbar fixedTop inverse collapseOnSelect>
         <Navbar.Header>
-          <Navbar.Brand>
-            <a href="/home">
-              Aesthetik
-            </a>
+          <Navbar.Brand className="navbar-brand">
+          
+            {<a href="/home">
+                  <img width={150} height={150} alt="logo" align="top" src={require("AesthetikLogo.svg")} />        
+                        </a>}
           </Navbar.Brand>
         </Navbar.Header>
        
@@ -36,6 +52,7 @@ class Header extends React.Component {
           </IndexLinkContainer>
           <IndexLinkContainer to="/editor">
             <NavItem
+              onClick={this.handleChildUnmount}
               eventKey={3}>
               Editor
             </NavItem>
