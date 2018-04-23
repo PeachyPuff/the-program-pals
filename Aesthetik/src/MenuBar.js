@@ -10,7 +10,7 @@ import { Dropdown,
         } from 'react-bootstrap';
 import { IndexLinkContainer } from 'react-router-bootstrap/lib';
 import Logo from 'AesthetikLogo.svg';
-import Background from './happyBackground1.svg';
+import EnergeticBack1 from './happyBackground1.svg';
 
 export default class MenuBar extends React.Component {
 	constructor(props) {
@@ -22,6 +22,7 @@ export default class MenuBar extends React.Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
+
   setBackground(background){
     document.body.style.backgroundImage= "url("+ background + ")";
     document.body.style.backgroundSize= "cover";
@@ -47,8 +48,8 @@ export default class MenuBar extends React.Component {
       			<Glyphicon glyph="music" /> 
       		   </Dropdown.Toggle>
       		   <Dropdown.Menu className="super-colors">
-      			 <MenuItem eventKey="1">Times New Roman</MenuItem>
-      			 <MenuItem eventKey="2">Georgia</MenuItem>
+      			 <MenuItem eventKey="1">Water Drop</MenuItem>
+      			 <MenuItem eventKey="2">Typewriter</MenuItem>
       			 <MenuItem eventKey="1">Times New Roman</MenuItem>
       			 <MenuItem eventKey="2">Georgia</MenuItem>
     			</Dropdown.Menu>
@@ -66,14 +67,14 @@ export default class MenuBar extends React.Component {
       			 <MenuItem eventKey="2">Georgia</MenuItem>
     			</Dropdown.Menu>
     			</Dropdown>
-			
+
 			<Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Choose Your Aesthetik</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <h2>e n e r g e t i c.</h2>
-            <Button onClick={()=>this.setBackground(Background)}>Prismatic Sunflower</Button>
+            <Button onClick={()=>this.setBackground(EnergeticBack1)}>Prismatic Sunflower</Button>
             <Button>Clear Blue</Button> 
             <hr />
             <h2>p e a c e f u l. </h2>
