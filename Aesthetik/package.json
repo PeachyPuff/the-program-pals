@@ -9,15 +9,18 @@
     "draft-js-plugins-editor": "^2.0.4",
     "draft-js-side-toolbar-plugin": "^2.0.2",
     "draft-js-toolbars": "^0.0.1",
+    "howler": "^2.0.9",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.1",
-    "react": "^16.2.0",
+    "popper.js": "^1.14.3",
+    "react": "^16.3.2",
     "react-butterfly-button": "^1.0.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "soundjs": "^1.0.1",
+    "tone": "^13.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,7 +29,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.1.0",
     "css-loader": "^0.28.11",
     "react-bootstrap": "^0.32.1",
     "style-loader": "^0.21.0"
