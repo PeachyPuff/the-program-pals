@@ -16,6 +16,11 @@ import { convertToRaw } from 'draft-js';
 // import convertToHTML from 'draft-convert';
 import draftToHtml from 'draftjs-to-html';
 import {stateToHTML} from 'draft-js-export-html';
+import {Howl,Howler} from 'howler';
+//import SoundJS from 'soundjs';
+import ReactHowler from 'react-howler';
+import * as Tone from "tone";
+import Audio from './Audio'
 
 const sideToolbarPlugin = createSideToolbarPlugin({
   structure: [
@@ -36,6 +41,7 @@ export default class EditorPage extends React.Component {
       hasFocus: false,
       editorState: EditorState.createEmpty()};
     this.onChange = (editorState) => this.setState({editorState});
+    //this.sound = new Audio();
 
     this.download = this.download.bind(this);
 
@@ -105,8 +111,24 @@ export default class EditorPage extends React.Component {
         </div>
       </div>
        <SideToolbar />
-      
       </div>
+      <h1 className='title'>ReactHowler.js</h1>
+      <div className='Audio'>
+      <section>
+        <Audio/>
+        <a href='https://github.com/thangngoc89/react-howler' className='github-btn'/>
+      </section>
+      <section>
+        <p> className = 'Audio'</p>
+        <Audio/>
+      <a href={`https://github.com/PeachyPuff/the-program-pals/blob/Audio/Aesthetik/src/Audio.js`} className='Audio' source/>
+      </section>
+      <section>
+            <h1>Global Howler Object</h1>
+            <p>usingWebAudio: {(window.Howler.usingWebAudio) ? 'true' : 'false'}</p>
+            <pre>window.Howler.usingWebAudio</pre>
+          </section>
+          </div>
    </div>
     );
   }

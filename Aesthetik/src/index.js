@@ -9,6 +9,8 @@ import LoginPage from './Login';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import registerServiceWorker from 'registerServiceWorker';
 
+export const Audio = require('./Audio').default
+
 ReactDOM.render(
 	(<Router>
 		<div>
