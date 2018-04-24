@@ -20,7 +20,7 @@ import {Howl,Howler} from 'howler';
 //import SoundJS from 'soundjs';
 import ReactHowler from 'react-howler';
 import * as Tone from "tone";
-import Audio from './Audio'
+import BackgroundAudio from './BackgroundAudio'
 
 const sideToolbarPlugin = createSideToolbarPlugin({
   structure: [
@@ -113,15 +113,15 @@ export default class EditorPage extends React.Component {
        <SideToolbar />
       </div>
       <h1 className='title'>ReactHowler.js</h1>
-      <div className='Audio'>
+      <div className='BackgroundAudio'>
       <section>
-        <Audio/>
+        <BackgroundAudio/>
         <a href='https://github.com/thangngoc89/react-howler' className='github-btn'/>
       </section>
       <section>
-        <p> className = 'Audio'</p>
-        <Audio/>
-      <a href={`https://github.com/PeachyPuff/the-program-pals/blob/Audio/Aesthetik/src/Audio.js`} className='Audio' source/>
+        <p> className = 'BackgroundAudio'</p>
+        <BackgroundAudio/>
+      <a href={`https://github.com/PeachyPuff/the-program-pals/blob/Audio/Aesthetik/src/BackgroundAudio.js`} className='BackgroundAudio' source/>
       </section>
       <section>
             <h1>Global Howler Object</h1>

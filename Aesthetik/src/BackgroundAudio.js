@@ -9,7 +9,7 @@ import * as Tone from "tone";
 //document.onkeypress = keyHandler;
 //document.onclick = clickHandler;
 
-class Audio extends React.Component {
+class BackgroundAudio extends React.Component {
     constructor(props) {
         super(props)
 
@@ -79,9 +79,9 @@ class Audio extends React.Component {
     
     render () {
         return (
-        <div className='Audio'>
+        <div className='BackgroundAudio'>
         <ReactHowler
-          src={['./rain-01.mp3', './rain-02.mp3','./rain-04.mp3']}
+          src={['rain-01.mp3', 'rain-02.mp3','rain-04.mp3']}
           playing={this.state.playing}
           onLoad={this.handleOnLoad}
           onPlay={this.handleOnPlay}
@@ -143,7 +143,7 @@ class Audio extends React.Component {
         );
     }
 }
-export default Audio
+export default BackgroundAudio
         /*
         var Audio = function() {
         this.audio = new Howl({

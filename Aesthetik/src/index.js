@@ -8,8 +8,11 @@ import Features from './Features';
 import LoginPage from './Login';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import registerServiceWorker from 'registerServiceWorker';
+//import BackgroundAudio from './BackgroundAudio'
 
-export const Audio = require('./Audio').default
+export const BackgroundAudio = require('./BackgroundAudio').default
+export const EventAudio = require('./EventAudio').default
+
 
 ReactDOM.render(
 	(<Router>
