@@ -52,7 +52,7 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 80%;
+  height: 75%;
   width: 70%;
 }
 
@@ -71,7 +71,7 @@ body{
 }
 
 #NavHead {
-  padding-top: 50px;
+  padding-top: 10px;
   min-height: ~"calc(100vh - 92px)";
 }
 
@@ -84,7 +84,7 @@ body{
 }
 
 .EditorTitle {
-  font-family: Georgia, serif;
+ /* font-family: Georgia, serif;*/
   color: white;
   text-align: center;
 }
@@ -92,9 +92,6 @@ body{
 .navbar-brand {
   display: flex;
   align-items: center;
-}
-.navbar-brand>img {
-  padding: 7px 14px;
 }
 
 footer {
