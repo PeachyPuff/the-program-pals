@@ -2192,6 +2192,13 @@ dotenv@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
 
+draft-convert@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/draft-convert/-/draft-convert-2.0.1.tgz#dfaa812b489fa87b38a54e16d04523eab63564d9"
+  dependencies:
+    immutable "~3.7.4"
+    invariant "^2.2.1"
+
 draft-css@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/draft-css/-/draft-css-0.0.1.tgz#17029151b8d648c8aae87a760f6f0d621b3c901e"
@@ -2201,6 +2208,12 @@ draft-js-buttons@^2.0.1:
   resolved "https://registry.yarnpkg.com/draft-js-buttons/-/draft-js-buttons-2.0.1.tgz#8e88c4d6c816c3b7c8ae08a3daa799afa94e14be"
   dependencies:
     union-class-names "^1.0.0"
+
+draft-js-export-html@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-export-html/-/draft-js-export-html-1.2.0.tgz#1cbe2b78e1fed74fc29c7cdcbfd7540468eca209"
+  dependencies:
+    draft-js-utils "^1.2.0"
 
 draft-js-plugins-editor@^2.0.4:
   version "2.0.4"
@@ -2234,6 +2247,10 @@ draft-js-toolbars@^0.0.1:
     react "^15.3.2"
     react-dom "^15.3.2"
 
+draft-js-utils@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-utils/-/draft-js-utils-1.2.0.tgz#f5cb23eb167325ffed3d79882fdc317721d2fd12"
+
 draft-js@^0.10.5:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
@@ -2249,6 +2266,10 @@ draft-js@^0.9.1:
     fbjs "^0.8.3"
     immutable "~3.7.4"
     object-assign "^4.1.0"
+
+draftjs-to-html@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/draftjs-to-html/-/draftjs-to-html-0.8.3.tgz#0ca3c273e802ed3b3bbf12e3900ebb70fd95517f"
 
 duplexer3@^0.1.4:
   version "0.1.4"

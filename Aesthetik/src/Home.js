@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './AesthetikLogo.svg';
-import background from './happyBackground1.svg';
 import button from './bigButton.svg';
 import ReactDOM from 'react-dom';
 import { Jumbotron, Button, Image, Modal } from 'react-bootstrap';

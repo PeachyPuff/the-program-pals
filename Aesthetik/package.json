@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "aphrodite": "^2.2.0",
+    "draft-convert": "^2.0.1",
     "draft-css": "0.0.1",
     "draft-js": "^0.10.5",
+    "draft-js-export-html": "^1.2.0",
     "draft-js-plugins-editor": "^2.0.4",
     "draft-js-side-toolbar-plugin": "^2.0.2",
     "draft-js-toolbars": "^0.0.1",
