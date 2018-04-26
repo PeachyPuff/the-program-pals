@@ -18,7 +18,7 @@ class Features extends React.Component {
            </Carousel.Caption>
         </Carousel.Item>
       <Carousel.Item>
-        <img width={400} height={300} alt="400x300" src={require("./happyBackground1.svg")} className="CarouselImage" />
+        <img width={400} height={300} alt="400x300" src={require("./energeticBack3.jpg")} className="CarouselImage" />
         <Carousel.Caption>
           <h2>Choose Your Tik</h2>
           <h3>Pleasnt sounds to accompany your typing.</h3>

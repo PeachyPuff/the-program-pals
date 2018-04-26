@@ -64,7 +64,7 @@ export default class Home extends React.Component {
             <hr />
 
              <h3>Or Start Writing Without Login</h3>
-             <Link to="editor"><h5>Go To Environment Builder</h5></Link>
+             <Link to="editor"><h4>Go To Writing Environment</h4></Link>
            
           </Modal.Body>
           <Modal.Footer>

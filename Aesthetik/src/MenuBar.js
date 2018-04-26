@@ -123,7 +123,9 @@ export default class MenuBar extends React.Component {
     this.state = {
       showMenu: false,
       show: false,
-      playSound: false
+      playSound: false,
+      playBackgroundNoise: false,
+      playBackgroundNoise2: false,
       }
     this.setBackground = this.setBackground.bind(this);
     this.setFont = this.setFont.bind(this);
@@ -134,13 +136,22 @@ export default class MenuBar extends React.Component {
     this.setSound = this.setSound.bind(this);
     this.playTik = this.playTik.bind(this);
     this.stopTik = this.stopTik.bind(this);
-    // this.waterSound = this.waterSound.bind(this);
+    this.playBackNoise = this.playBackNoise.bind(this);
+    this.playBackNoise2 = this.playBackNoise.bind(this);
+
   }
-  //  componentWillMount() {
-  //     document.addEventListener("keydown", this.onKeyPressed.bind(this));
 
-  // }
-
+  playBackNoise(){
+  	if(this.state.playBackgroundNoise == false){ 
+  		this.setState({playBackgroundNoise: true});	
+  	}
+  	else{
+  		this.setState({playBackgroundNoise: true});
+  	}
+  }
+   playBackNoise2(){
+  	this.setState({playBackgroundNoise2: true});
+  }
   setBackground(background){
     document.body.style.background = "url("+ background + ")";
     document.body.style.backgroundSize= "cover";
@@ -195,12 +206,12 @@ export default class MenuBar extends React.Component {
 		   <div className="in-row">
 
 		   <ReactHowler
-		   	src={require('./waterDrop.wav')}
-		   	playing={this.state.playSound}
+		   	src={require('./rain_sound.mp3')}
+		   	playing={this.state.playBackgroundNoise}
 		   	preload={true} 
-		   	
+		   	loop={true}
 		   	/>
-
+	
 		  	<ToggleBtn onClick={this.showMenu.bind(this)}><Glyph glyph="eye-open" /></ToggleBtn>
 
 		  	{!this.state.showMenu && 
@@ -225,8 +236,8 @@ export default class MenuBar extends React.Component {
       			<Glyph glyph="music" /> 
       		   </Dropdown.Toggle>
       		   <Dropdown.Menu className="sound-list">
-      			 <MenuItem eventKey="1"onSelect={this.setSound}>Water Drop</MenuItem>
-      			 <MenuItem eventKey="2">Typewriter</MenuItem>
+      			 <MenuItem eventKey="1"onSelect={this.playBackNoise}>Water Drop</MenuItem>
+      			 <MenuItem eventKey="2">Crashing Waves</MenuItem>
     			</Dropdown.Menu>
     		 </Dropdown>}
     
@@ -250,7 +261,7 @@ export default class MenuBar extends React.Component {
           		</Modal.Header>
           		<Modal.Body>
             		<h2>e n e r g e t i c.</h2>
-            		<Button onClick={()=>this.setButtonTheme(Btn)}>Prismatic Sunflower</Button>
+            		<Button onClick={()=>this.setBackground(EnergeticBack1)}>Prismatic Sunflower</Button>
             		<Button onClick={()=>this.setBackground(EnergeticBack2)}>Flower Branch</Button>
             		<Button onClick={()=>this.setBackground(EnergeticBack3)}>Blossom</Button> 
             		<hr />
