@@ -3,9 +3,11 @@ import { Grid, Nav, NavItem } from 'react-bootstrap';
 
 function Footer(/*props*/) {
   return (
-    <footer>
+    <footer className="push">
       <Grid>
-        <Nav justified>
+
+        <div className="text-center small copyright">
+         <Nav justified>
           <NavItem
             eventKey={1}>
             Privacy policy
@@ -20,10 +22,10 @@ function Footer(/*props*/) {
             Some other professional link
           </NavItem>
         </Nav>
-
-        <div className="text-center small copyright">
-          © RLM 2016
+           Elizabeth Nelson & Hasan Sahli. © 2018
         </div>
+
+
       </Grid>
     </footer>
   );

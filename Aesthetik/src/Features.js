@@ -27,8 +27,8 @@ class Features extends React.Component {
       <Carousel.Item>
         <img width={400} height={300} alt="400x300" src={require("./happyBackground1.svg")} className="CarouselImage" />
         <Carousel.Caption>
-          <h2>Third slide label</h2>
-          <h3>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h3>
+          <h2>Minimalist Formatting Options</h2>
+          <h3>So you can focus on what's important: Writing.</h3>
         </Carousel.Caption>
       </Carousel.Item>
      </Carousel>; 

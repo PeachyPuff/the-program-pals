@@ -15,6 +15,8 @@ import { convertToRaw } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
 import {stateToHTML} from 'draft-js-export-html';
 import styled, { css } from 'styled-components';
+import createCounterPlugin from 'draft-js-counter-plugin';
+import 'draft-js-counter-plugin/lib/plugin.css';
 
   // <Button onClick={this.logState}>rawState</Button>
   //    
@@ -34,8 +36,9 @@ import styled, { css } from 'styled-components';
     background: lightblue;
     color: white;
   `}
-`;  
-
+`;
+const counterPlugin = createCounterPlugin();  
+const { CharCounter } = counterPlugin;
 const sideToolbarPlugin = createSideToolbarPlugin({
   structure: [
     BoldButton,
@@ -99,13 +102,13 @@ export default class EditorPage extends React.Component {
   render() {
     return (
       <div>
+       
       <Btn onClick={()=>this.download("MyAesthetikDraft.html","text/html")}>
         <Glyphicon glyph="save" />
       </Btn>
 
       <MenuBar />
 
-       
       <div className={`container-root ${this.state.hasFocus ? 'hasFocus' : ''}`}>
      <div style={{marginLeft: "90%", alignContent: "top"}} >
       <div className="g-savetodrive"
@@ -123,13 +126,15 @@ export default class EditorPage extends React.Component {
             placeholder="Start Writing"
             editorState={this.state.editorState}
             onChange={this.onChange}
-            plugins={[sideToolbarPlugin]}
+            plugins={[sideToolbarPlugin, counterPlugin]}
           />
         </div>
       </div>
        <SideToolbar />
-      
+       
       </div>
+
+      <CharCounter editorState={this.state.editorState} limit={200} />
    </div>
     );
   }

@@ -2,36 +2,25 @@ body{
   /*background-color: #4b5463;*/
   background-image: url(aesthetikBackground.svg);
   background-size: cover;
-  background-attachment: sticky;
 }
+
 .App {
-  text-align: center;
+ min-height: 100%;
+ padding-bottom: 100px;
+ text-align: center;
+ background-repeat: no-repeat;
+ background-attachment: scroll;
+ font-family: 'Ubuntu', sans-serif;
 }
 
 .App-logo {
   /*animation: App-logo-spin infinite 20s linear;*/
-  height: 500px;
+  opacity: 0.8;
+
 }
 
-.App-header {
-  background-color: #343b3d;
-  height: 100px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-* {
- box-sizing: border-box;
-}
 #content {
- width: 580px;
+ width: 680px;
  height: 720px;
  margin: 0 auto;
 }
@@ -70,10 +59,15 @@ body{
 
 }
 
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #NavHead {
   padding-top: 10px;
-  min-height: ~"calc(100vh - 92px)";
-}
+  }
 
 .MainButton {
   
@@ -94,7 +88,31 @@ body{
   align-items: center;
 }
 
+.in-row {
+  display:flex; 
+  flex-direction:row;
+}
+
+.modal-container {
+  position: relative;
+
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+footer,
+.push {
+  height: 50px;
+}
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+  background: #222;
+
+  color: white;
   border-radius: 0 !important;
   border-bottom: 0;
   margin: 20px 0 0;
@@ -104,4 +122,8 @@ footer {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@font-face {
+  font-family: 'Ubuntu', sans-serif;
 }

@@ -32,7 +32,7 @@ class Header extends React.Component {
           <Navbar.Brand className="navbar-brand">
           
             {<a href="/home">
-                  <img width={150} height={150} alt="logo" align="top" src={require("AesthetikLogo.svg")} />        
+                  <img className="App-logo" width={100} height={100} alt="logo" align="top" src={require("AesthetikLogo2.svg")} />        
                         </a>}
           </Navbar.Brand>
         </Navbar.Header>
@@ -57,15 +57,19 @@ class Header extends React.Component {
               Editor
             </NavItem>
           </IndexLinkContainer>
+          
+          </Nav>
+       <Nav pullRight>
           <IndexLinkContainer to="/login">
-            <NavItem
+           
+            <NavItem 
               eventKey={4}
               href="#">
               Login
             </NavItem>
+            
           </IndexLinkContainer>
           </Nav>
-      
       </Navbar>
     );
   }

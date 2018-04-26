@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 //<Image src={require("bigButton.svg")} rounded />
 import FormattingBar from './FormattingBar';
 import Header  from './Header';
+import './App.css';
+import Footer from "./Footer"
 
 export default class Home extends React.Component {
     constructor(props, context) {
@@ -33,9 +35,10 @@ export default class Home extends React.Component {
     return (
       <div className="App">
        <Header />
-        <Jumbotron className="jumbotronStyle">
+        <Jumbotron className="jumbotronStyle vertical-center">
+        <div >
           <h1>a e s t h e t i  k .</h1>
-            <p className="App-header">A Customizable Writing App to Suit Your Creative Needs
+            <p>A Customizable Writing App to Suit Your Creative Needs
             <br />
             <br />
         
@@ -47,21 +50,18 @@ export default class Home extends React.Component {
               </Button>
            
             </p>
+            </div>
            </Jumbotron>
 
-          <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal className=".modal-container" show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Get Started</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h3>Login or Sign Up</h3>
-            <Link to="login"> <h5> Login</h5> </Link>
+            <h2>Login </h2>
+            <Link to="login"> <h4> Login With Google. </h4> </Link>
 
             <hr />
-
-            <h5>Sign Up (It's Free!)</h5>
-            
-             <hr />
 
              <h3>Or Start Writing Without Login</h3>
              <Link to="editor"><h5>Go To Environment Builder</h5></Link>
@@ -71,7 +71,7 @@ export default class Home extends React.Component {
             <Button onClick={this.handleClose}>Close</Button>
           </Modal.Footer>
         </Modal>
-  
+  <Footer />
          </div> 
 
     	);
