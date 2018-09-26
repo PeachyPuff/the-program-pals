@@ -215,7 +215,7 @@ export default class MenuBar extends React.Component {
 		  	<ToggleBtn onClick={this.showMenu.bind(this)}><Glyph glyph="eye-open" /></ToggleBtn>
 
 		  	{!this.state.showMenu && 
-		  		<a href="/home">
+		  		<a href="/">
 		  			<HomeBtn>
       		  			<HomeGlyph glyph="home" /> 
       		  		

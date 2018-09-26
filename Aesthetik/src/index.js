@@ -10,15 +10,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import registerServiceWorker from 'registerServiceWorker';
 
 ReactDOM.render(
-	(<Router>
-		<div>
-		 <Route path="/" component={ App }/>
-	  	 <Route path='/home' component={ Home }  />
-	  	 <Route path='/features' component={ Features } />
-		 <Route path='/editor' component={ EditorPage } />
-	  	 <Route path='/login' component={ LoginPage } />
-	  	</div>
-	 </Router>
+	(<App />
 	 ),
 	document.getElementById('root')
 	);

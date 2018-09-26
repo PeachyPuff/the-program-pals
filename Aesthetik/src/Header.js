@@ -31,14 +31,14 @@ class Header extends React.Component {
         <Navbar.Header>
           <Navbar.Brand className="navbar-brand">
           
-            {<a href="/home">
+            {<a href="/">
                   <img className="App-logo" width={100} height={100} alt="logo" align="top" src={require("AesthetikLogo2.svg")} />        
                         </a>}
           </Navbar.Brand>
         </Navbar.Header>
        
           <Nav bsStyle="pills">
-          <IndexLinkContainer to="/home">
+          <IndexLinkContainer to="/">
             <NavItem
               eventKey={1}>
               Home
